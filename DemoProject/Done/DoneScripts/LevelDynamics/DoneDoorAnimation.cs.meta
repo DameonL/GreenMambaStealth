@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 103f7ce59ffc7be468c1ad34f4d41f9c
+timeCreated: 18446744011573954816
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - doorSwishClip: {fileID: 8300000, guid: e0bb565ae709d524296e2c5ffc89fee4, type: 3}
+  - accessDeniedClip: {fileID: 8300000, guid: 4d32f49836b46f74e84f051a763cb3bd, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

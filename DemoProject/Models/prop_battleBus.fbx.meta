@@ -1,0 +1,224 @@
+fileFormatVersion: 2
+guid: d78b80b4f42e23542aec2a5c85a5260c
+timeCreated: 18446744011573954816
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: prop_battleBus
+    100004: prop_battleBus_appendage_001
+    100006: prop_battleBus_appendages_001
+    100008: prop_battleBus_baggageFrame_001
+    100010: prop_battleBus_barbedWire_001
+    100012: prop_battleBus_blackFrame_001
+    100014: prop_battleBus_body_001
+    100016: prop_battleBus_boxes_001
+    100018: prop_battleBus_canister_A_001
+    100020: prop_battleBus_canister_B_001
+    100022: prop_battleBus_canvas_001
+    100024: prop_battleBus_canvas_002
+    100026: prop_battleBus_carpet_001
+    100028: prop_battleBus_crate_001
+    100030: prop_battleBus_lights1_001
+    100032: prop_battleBus_palette_A_001
+    100034: prop_battleBus_palette_B_001
+    100036: prop_battleBus_sack_A_001
+    100038: prop_battleBus_sack_B_001
+    100040: prop_battleBus_sack_C_001
+    100042: prop_battleBus_sack_D_001
+    100044: prop_battleBus_tubes_001
+    100046: prop_battleBus_tv_001
+    100048: prop_battleBus_wheels_001
+    100050: prop_battleBus_whiteFrame_001
+    100052: Windows_SMASH_Crash
+    100054: Windows_SMASH_Crash1
+    400000: //RootNode
+    400002: prop_battleBus
+    400004: prop_battleBus_appendage_001
+    400006: prop_battleBus_appendages_001
+    400008: prop_battleBus_baggageFrame_001
+    400010: prop_battleBus_barbedWire_001
+    400012: prop_battleBus_blackFrame_001
+    400014: prop_battleBus_body_001
+    400016: prop_battleBus_boxes_001
+    400018: prop_battleBus_canister_A_001
+    400020: prop_battleBus_canister_B_001
+    400022: prop_battleBus_canvas_001
+    400024: prop_battleBus_canvas_002
+    400026: prop_battleBus_carpet_001
+    400028: prop_battleBus_crate_001
+    400030: prop_battleBus_lights1_001
+    400032: prop_battleBus_palette_A_001
+    400034: prop_battleBus_palette_B_001
+    400036: prop_battleBus_sack_A_001
+    400038: prop_battleBus_sack_B_001
+    400040: prop_battleBus_sack_C_001
+    400042: prop_battleBus_sack_D_001
+    400044: prop_battleBus_tubes_001
+    400046: prop_battleBus_tv_001
+    400048: prop_battleBus_wheels_001
+    400050: prop_battleBus_whiteFrame_001
+    400052: Windows_SMASH_Crash
+    400054: Windows_SMASH_Crash1
+    2300000: prop_battleBus_appendage_001
+    2300002: prop_battleBus_appendages_001
+    2300004: prop_battleBus_baggageFrame_001
+    2300006: prop_battleBus_barbedWire_001
+    2300008: prop_battleBus_blackFrame_001
+    2300010: prop_battleBus_body_001
+    2300012: prop_battleBus_boxes_001
+    2300014: prop_battleBus_canister_A_001
+    2300016: prop_battleBus_canister_B_001
+    2300018: prop_battleBus_canvas_001
+    2300020: prop_battleBus_canvas_002
+    2300022: prop_battleBus_carpet_001
+    2300024: prop_battleBus_crate_001
+    2300026: prop_battleBus_lights1_001
+    2300028: prop_battleBus_palette_A_001
+    2300030: prop_battleBus_palette_B_001
+    2300032: prop_battleBus_sack_A_001
+    2300034: prop_battleBus_sack_B_001
+    2300036: prop_battleBus_sack_C_001
+    2300038: prop_battleBus_sack_D_001
+    2300040: prop_battleBus_tubes_001
+    2300042: prop_battleBus_tv_001
+    2300044: prop_battleBus_wheels_001
+    2300046: prop_battleBus_whiteFrame_001
+    2300048: Windows_SMASH_Crash
+    2300050: Windows_SMASH_Crash1
+    2300052: //RootNode
+    3300000: prop_battleBus_appendage_001
+    3300002: prop_battleBus_appendages_001
+    3300004: prop_battleBus_baggageFrame_001
+    3300006: prop_battleBus_barbedWire_001
+    3300008: prop_battleBus_blackFrame_001
+    3300010: prop_battleBus_body_001
+    3300012: prop_battleBus_boxes_001
+    3300014: prop_battleBus_canister_A_001
+    3300016: prop_battleBus_canister_B_001
+    3300018: prop_battleBus_canvas_001
+    3300020: prop_battleBus_canvas_002
+    3300022: prop_battleBus_carpet_001
+    3300024: prop_battleBus_crate_001
+    3300026: prop_battleBus_lights1_001
+    3300028: prop_battleBus_palette_A_001
+    3300030: prop_battleBus_palette_B_001
+    3300032: prop_battleBus_sack_A_001
+    3300034: prop_battleBus_sack_B_001
+    3300036: prop_battleBus_sack_C_001
+    3300038: prop_battleBus_sack_D_001
+    3300040: prop_battleBus_tubes_001
+    3300042: prop_battleBus_tv_001
+    3300044: prop_battleBus_wheels_001
+    3300046: prop_battleBus_whiteFrame_001
+    3300048: Windows_SMASH_Crash
+    3300050: Windows_SMASH_Crash1
+    3300052: //RootNode
+    4300000: prop_battleBus_body_001
+    4300002: prop_battleBus_wheels_001
+    4300004: prop_battleBus_lights1_001
+    4300006: prop_battleBus_tv_001
+    4300008: prop_battleBus_sack_A_001
+    4300010: prop_battleBus_sack_B_001
+    4300012: prop_battleBus_sack_C_001
+    4300014: prop_battleBus_sack_D_001
+    4300016: prop_battleBus_canister_A_001
+    4300018: prop_battleBus_canister_B_001
+    4300020: prop_battleBus_carpet_001
+    4300022: prop_battleBus_barbedWire_001
+    4300024: prop_battleBus_crate_001
+    4300026: prop_battleBus_palette_B_001
+    4300028: prop_battleBus_palette_A_001
+    4300030: prop_battleBus_appendages_001
+    4300032: prop_battleBus_tubes_001
+    4300034: prop_battleBus_baggageFrame_001
+    4300036: prop_battleBus_canvas_001
+    4300038: prop_battleBus_whiteFrame_001
+    4300040: prop_battleBus_blackFrame_001
+    4300042: prop_battleBus_boxes_001
+    4300044: prop_battleBus_canvas_002
+    4300046: prop_battleBus_appendage_001
+    4300048: Windows_SMASH_Crash
+    4300050: Windows_SMASH_Crash1
+    4300052: prop_battleBus
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

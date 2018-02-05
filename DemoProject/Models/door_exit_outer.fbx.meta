@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: 67894dbe67f929d4985daf867dcd597f
+timeCreated: 18446744011573954816
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: door_exitOuter_left_001
+    100004: door_exitOuter_right_001
+    100006: door_exit_outer_left
+    100008: door_exit_outer_right
+    100010: door_exit_outer_left_001
+    100012: door_exit_outer_right_001
+    100014: prop_doorExit_hi_001
+    100016: prop_doorExit_hi_002
+    100018: prop_doorExit_lo_001
+    100020: prop_doorExit_lo_002
+    400000: //RootNode
+    400002: door_exitOuter_left_001
+    400004: door_exitOuter_right_001
+    400006: door_exit_outer_left
+    400008: door_exit_outer_right
+    400010: door_exit_outer_left_001
+    400012: door_exit_outer_right_001
+    400014: prop_doorExit_hi_001
+    400016: prop_doorExit_hi_002
+    400018: prop_doorExit_lo_001
+    400020: prop_doorExit_lo_002
+    2300000: door_exitOuter_left_001
+    2300002: door_exitOuter_right_001
+    2300004: door_exit_outer_left
+    2300006: door_exit_outer_right
+    2300008: door_exit_outer_left_001
+    2300010: door_exit_outer_right_001
+    2300012: prop_doorExit_hi_001
+    2300014: prop_doorExit_hi_002
+    2300016: prop_doorExit_lo_001
+    2300018: prop_doorExit_lo_002
+    3300000: door_exitOuter_left_001
+    3300002: door_exitOuter_right_001
+    3300004: door_exit_outer_left
+    3300006: door_exit_outer_right
+    3300008: door_exit_outer_left_001
+    3300010: door_exit_outer_right_001
+    3300012: prop_doorExit_hi_001
+    3300014: prop_doorExit_hi_002
+    3300016: prop_doorExit_lo_001
+    3300018: prop_doorExit_lo_002
+    4300000: door_exitOuter_left_001
+    4300002: door_exitOuter_right_001
+    4300004: door_exit_outer_left
+    4300006: door_exit_outer_right
+    4300008: door_exit_outer_left_001
+    4300010: door_exit_outer_right_001
+    4300012: prop_doorExit_hi_001
+    4300014: prop_doorExit_hi_002
+    4300016: prop_doorExit_lo_001
+    4300018: prop_doorExit_lo_002
+    7400000: door_exitOuter_closed
+    7400002: door_exitOuter_open
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: door_exitOuter_closed
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: door_exitOuter_open
+      takeName: Take 001
+      firstFrame: 11
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
