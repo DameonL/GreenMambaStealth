@@ -1,4 +1,4 @@
-﻿using DrunkenMambaStealth.Stealth;
+﻿using GreenMambaStealth.Stealth;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
