@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace DrunkenMambaStealth.Stealth
+namespace GreenMambaStealth.Stealth
 {
 	/// <summary>
 	/// An object meant to be detectable as part of the stealth system.
