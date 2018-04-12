@@ -1,7 +1,7 @@
-﻿using DrunkenMambaStealth.Stealth;
+﻿using GreenMambaStealth.Stealth;
 using UnityEngine;
 
-namespace DrunkenMambaStealth.UI
+namespace GreenMambaStealth.UI
 {
 	public class VisibilityMeter : MonoBehaviour
 	{
