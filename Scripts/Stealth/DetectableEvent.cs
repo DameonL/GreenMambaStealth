@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine.Events;
 
-namespace DrunkenMambaStealth.Stealth
+namespace GreenMambaStealth.Stealth
 {
 	/// <summary>
 	/// An event that passes a single argument, which is the Detectable which the event is based around.
