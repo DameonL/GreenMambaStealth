@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace DrunkenMambaStealth.UI
+namespace GreenMambaStealth.UI
 {
 	public class Dial : MonoBehaviour
 	{
