@@ -1,8 +1,8 @@
-﻿using DrunkenMambaStealth.Stealth;
+﻿using GreenMambaStealth.Stealth;
 using UnityEngine;
 using UnityEditor;
 
-namespace DrunkenMambaStealth.Editor.Stealth
+namespace GreenMambaStealth.Editor.Stealth
 {
 	[CustomEditor(typeof(DetectableCharacter))]
 	public class DetectableCharacterEditor : UnityEditor.Editor
