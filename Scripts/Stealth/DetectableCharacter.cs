@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace DrunkenMambaStealth.Stealth
+namespace GreenMambaStealth.Stealth
 {
 	/// <summary>
 	/// A character which is detectable by sensors.
