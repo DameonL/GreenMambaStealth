@@ -4,7 +4,7 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace DrunkenMambaStealth.Stealth
+namespace GreenMambaStealth.Stealth
 {
 	/// <summary>
 	/// Uses a specialized camera to render to a RenderTexture, then analyzes it to determine ambient light level.
