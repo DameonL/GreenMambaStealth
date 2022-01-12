@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DrunkenMambaStealth.AIs
+namespace GreenMambaStealth.AIs
 {
 	/// <summary>
 	/// Used to detect other characters.
