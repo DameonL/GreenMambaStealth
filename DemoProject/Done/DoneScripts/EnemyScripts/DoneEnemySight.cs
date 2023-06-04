@@ -1,6 +1,6 @@
 using UnityEngine;
-using DrunkenMambaStealth.AIs;
-using DrunkenMambaStealth.Stealth;
+using GreenMambaStealth.AIs;
+using GreenMambaStealth.Stealth;
 
 public class DoneEnemySight : MonoBehaviour
 {
