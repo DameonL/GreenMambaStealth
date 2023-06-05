@@ -1,6 +1,16 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\DemoProject",
+    "\\DemoProject\\Scripts",
+    "\\Prefabs",
+    "\\Prefabs\\Stealth",
+    "\\Prefabs\\UI",
+    "\\Scripts",
+    "\\Shaders",
+    "\\Sprites",
+    "\\Textures"
   ],
+  "SelectedNode": "\\README",
   "PreviewInSolutionExplorer": false
 }
