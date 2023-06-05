@@ -195,7 +195,7 @@ namespace GreenMambaStealth.Stealth
 			transform.localScale = Vector3.one;
 			_detectionTexture = new Texture2D(_renderTexture.width, _renderTexture.height, TextureFormat.ARGB32, false);
 			Vector3 cachedPosition = transform.position;
-			MeshRenderer renderer = GetComponentInParent<MeshRenderer>();
+			MeshRenderer renderer = transform.parent.GetComponentInChildren<MeshRenderer>();
 			Vector3 directionFromCharacter = (transform.position - transform.parent.position).normalized;
 
 			directionFromCharacter.Scale(renderer.bounds.extents);
@@ -281,7 +281,7 @@ namespace GreenMambaStealth.Stealth
 						{
 							if (_pixels[i].a > 0.01)
 							{
-								ChunkAverage += _pixels[i].r + _pixels[i].g + _pixels[i].b;
+								ChunkAverage += (_pixels[i].r + _pixels[i].g + _pixels[i].b) / 3;
 								countedPixels++;
 							}
 						}
