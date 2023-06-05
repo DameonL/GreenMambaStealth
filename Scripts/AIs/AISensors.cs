@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace GreenMambaStealth.AIs
 {
@@ -11,22 +12,16 @@ namespace GreenMambaStealth.AIs
 	[RequireComponent(typeof(SphereCollider))]
 	public class AISensors : MonoBehaviour
 	{
-		private HashSet<IDetectable> _charactersInRange = new HashSet<IDetectable>();
-		private HashSet<IDetectable> _visibleObjects = new HashSet<IDetectable>();
-		private HashSet<IDetectable> _invisibleObjects = new HashSet<IDetectable>();
-
 		/// <summary>
 		/// Triggered when an object is in sensor range, in the field of view, lit enough to be seen, and isn't obscured behind an object.
 		/// </summary>
 		[Tooltip("Triggered when an object is in sensor range, in the field of view, lit enough to be seen, and isn't obscured behind an object.")]
-		[SerializeField]
-		public DetectableEvent ObjectVisibleHandler = new DetectableEvent();
+		public DetectableEvent ObjectVisibleHandler { get; set; } = new();
 		/// <summary>
 		/// Triggered when an object that was previously visible is no longer visible.
 		/// </summary>
 		[Tooltip("Triggered when an object that was previously visible is no longer visible.")]
-		[SerializeField]
-		public DetectableEvent ObjectInvisibleHandler = new DetectableEvent();
+		public DetectableEvent ObjectInvisibleHandler { get; set; } = new();
 
 		[Tooltip("The angle within which this AI can see.")]
 		[SerializeField]
@@ -39,7 +34,7 @@ namespace GreenMambaStealth.AIs
 
 		[Tooltip("The distance/visibility curve for this AI. The X axis is distance, the Y axis is a multiplier to Visibility. The highest distance in the curve on the X axis is the AI's maximum sensory range.")]
 		[SerializeField]
-		private AnimationCurve _visibilityCurve = new AnimationCurve();
+		private AnimationCurve _visibilityCurve = new();
 
 		[Tooltip("A LayerMask representing which layers will be detectable.")]
 		[SerializeField]
@@ -47,14 +42,19 @@ namespace GreenMambaStealth.AIs
 
 		[Tooltip("Tags which are treated as invisible by these sensors.")]
 		[SerializeField]
-		private List<string> _invisibleTags = new List<string>();
+		private List<string> _invisibleTags = new();
 
 #if UNITY_EDITOR
 		[Tooltip("If enabled, events from these sensors will be displayed in the debug console.")]
 		[SerializeField]
 		private bool _verbose;
 #endif
+
 		private float _sensoryRange;
+		private HashSet<IDetectable> _charactersInRange = new();
+		private HashSet<IDetectable> _visibleObjects = new();
+		private HashSet<IDetectable> _invisibleObjects = new();
+
 
 		private void Awake()
 		{
@@ -155,7 +155,6 @@ namespace GreenMambaStealth.AIs
 				throw new ArgumentNullException("character");
 			}
 
-			RaycastHit hit;
 			float angle = Vector3.Angle(detectable.gameObject.transform.position - transform.position, transform.forward);
 
 			if (angle > _fieldOfView * 0.5f)
@@ -183,12 +182,12 @@ namespace GreenMambaStealth.AIs
 			if (isVisible)
 			{
 				Vector3 targetPosition = detectable.gameObject.GetComponent<Collider>().bounds.center;
-				Physics.Raycast(new Ray(transform.position, targetPosition - transform.position), out hit, _sensoryRange, _detectionMask.value);
+				Physics.Raycast(new Ray(transform.position, targetPosition - transform.position), out RaycastHit hit, _sensoryRange, _detectionMask.value);
 
 				if (hit.collider == null || hit.collider.GetComponent<IDetectable>() != detectable)
 				{
 #if UNITY_EDITOR
-					if (_verbose)
+					if (_verbose && hit.collider != null)
 						Debug.Log(GetHashCode() + "'s line of sight to " + detectable.gameObject.name + " is blocked by " + hit.collider.name);
 #endif
 
@@ -207,7 +206,7 @@ namespace GreenMambaStealth.AIs
 
 #if UNITY_EDITOR
 			if (_verbose)
-				Debug.Log(GetHashCode() + " - " + detectable.Visibility + " / " + visibilityRating + " : " + isVisible);
+				Debug.Log($"{GetHashCode()} - Base Visibility: {detectable.Visibility} / Distance Falloff Applied: {visibilityRating} : {isVisible}");
 #endif
 
 			return isVisible;
