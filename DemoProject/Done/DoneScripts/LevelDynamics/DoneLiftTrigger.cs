@@ -12,7 +12,6 @@ public class DoneLiftTrigger : MonoBehaviour
 	private GameObject player;							// Reference to the player.
 	private Animator playerAnim;						// Reference to the players animator component.
 	private DoneHashIDs hash;							// Reference to the HashIDs script.
-	private DoneCameraMovement camMovement;				// Reference to the camera movement script.
 	private DoneSceneFadeInOut sceneFadeInOut;			// Reference to the SceneFadeInOut script.
 	private DoneLiftDoorsTracking liftDoorsTracking;	// Reference to LiftDoorsTracking script.
 	private bool playerInLift;							// Whether the player is in the lift or not.
@@ -25,7 +24,6 @@ public class DoneLiftTrigger : MonoBehaviour
 		player = GameObject.FindGameObjectWithTag(DoneTags.player);
 		playerAnim = player.GetComponent<Animator>();
 		hash = GameObject.FindGameObjectWithTag(DoneTags.gameController).GetComponent<DoneHashIDs>();
-		camMovement = Camera.main.gameObject.GetComponent<DoneCameraMovement>();
 		sceneFadeInOut = GameObject.FindGameObjectWithTag(DoneTags.fader).GetComponent<DoneSceneFadeInOut>();
 		liftDoorsTracking = GetComponent<DoneLiftDoorsTracking>();
 	}
@@ -78,8 +76,6 @@ public class DoneLiftTrigger : MonoBehaviour
 		if(timer >= timeToLiftStart)
 		{
 			// ... stop the player and the camera moving and parent the player to the lift.
-			playerAnim.SetFloat(hash.speedFloat,0f);
-			camMovement.enabled = false;
 			player.transform.parent = transform;
 			
 			// Move the lift upwards.

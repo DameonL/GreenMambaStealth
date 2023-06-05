@@ -1,6 +1,7 @@
 using UnityEngine;
 using GreenMambaStealth.AIs;
 using GreenMambaStealth.Stealth;
+using GreenMambaStealth.DemoProject;
 
 public class DoneEnemySight : MonoBehaviour
 {
@@ -101,12 +102,9 @@ public class DoneEnemySight : MonoBehaviour
 				}
 			}
 			*/
-			// Store the name hashes of the current states.
-			int playerLayerZeroStateHash = playerAnim.GetCurrentAnimatorStateInfo(0).fullPathHash;
-			int playerLayerOneStateHash = playerAnim.GetCurrentAnimatorStateInfo(1).fullPathHash;
-			
+			var playerController = player.GetComponent<FirstPersonController>();
 			// If the player is running or is attracting attention...
-			if(playerLayerZeroStateHash == hash.locomotionState || playerLayerOneStateHash == hash.shoutState)
+			if(!playerController.Sneaking && !playerController.Crouching)
 			{
 				// ... and if the player is within hearing range...
 				if(CalculatePathLength(player.transform.position) <= col.radius)
@@ -116,15 +114,6 @@ public class DoneEnemySight : MonoBehaviour
         }
     }
 	
-	
-/*	void OnTriggerExit (Collider other)
-	{
-		// If the player leaves the trigger zone...
-		if(other.gameObject == player)
-			// ... the player is not in sight.
-			playerInSight = false;
-	}
-	*/
 	
 	float CalculatePathLength (Vector3 targetPosition)
 	{
