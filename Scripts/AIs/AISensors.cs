@@ -28,7 +28,6 @@ namespace GreenMambaStealth.AIs
 		private float _fieldOfView = 110;
 
 		[Tooltip("The minimum Visibility for any IDetectable in this AI's detection range.")]
-		[Range(0, 1)]
 		[SerializeField]
 		private float _minVisibilityForDetection = 0.5f;
 
@@ -155,15 +154,19 @@ namespace GreenMambaStealth.AIs
 				throw new ArgumentNullException("character");
 			}
 
+			float distance = Vector3.Distance(detectable.gameObject.transform.position, transform.position);
 			float angle = Vector3.Angle(detectable.gameObject.transform.position - transform.position, transform.forward);
 
-			if (angle > _fieldOfView * 0.5f)
+			if (angle > _fieldOfView * 0.5f || angle < -(_fieldOfView * 0.5f))
 			{
+				if (_verbose)
+				{
+					Debug.Log($"Out of field of view, angle: {angle} at distance {distance}");
+				}
 				return false;
 			}
 
 			bool isVisible = false;
-			float distance = Vector3.Distance(detectable.gameObject.transform.position, transform.position);
 			float visibilityRating = detectable.Visibility * _visibilityCurve.Evaluate(distance);
 
 			if (visibilityRating >= _minVisibilityForDetection)
