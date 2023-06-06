@@ -21,11 +21,6 @@ namespace GreenMambaStealth.Stealth
 		[SerializeField]
 		private float _normalMax = 1;
 
-		private void Update()
-		{
-			Debug.Log(Visibility);
-		}
-
 		/// <summary>
 		/// A float in the range of (0.01, 1) that represents the visibility of the character.
 		/// </summary>
